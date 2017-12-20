@@ -7,15 +7,24 @@
 #include <Controls.hpp>
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
+#include "BusinessSkinForm.hpp"
+#include "bsSkinCtrls.hpp"
+#include "bsSkinBoxCtrls.hpp"
+#include <Mask.hpp>
 //---------------------------------------------------------------------------
-class TForm1 : public TForm
+class TFrmMain : public TForm
 {
 __published:	// IDE-managed Components
+    TbsBusinessSkinForm *bsBusinessSkinForm1;
+    TbsSkinGroupBox *configGroup;
+    TbsSkinMemo *bsSkinMemo1;
+    TbsSkinComboBox *bsSkinComboBox1;
+    TbsSkinEdit *bsSkinEdit1;
 private:	// User declarations
 public:		// User declarations
-    __fastcall TForm1(TComponent* Owner);
+    __fastcall TFrmMain(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm1 *Form1;
+extern PACKAGE TFrmMain *FrmMain;
 //---------------------------------------------------------------------------
 #endif

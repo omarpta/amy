@@ -6,10 +6,13 @@
 #include "Main.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
+#pragma link "BusinessSkinForm"
+#pragma link "bsSkinCtrls"
+#pragma link "bsSkinBoxCtrls"
 #pragma resource "*.dfm"
-TForm1 *Form1;
+TFrmMain *FrmMain;
 //---------------------------------------------------------------------------
-__fastcall TForm1::TForm1(TComponent* Owner)
+__fastcall TFrmMain::TFrmMain(TComponent* Owner)
     : TForm(Owner)
 {
 }

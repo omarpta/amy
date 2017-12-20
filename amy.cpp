@@ -3,14 +3,14 @@
 #include <vcl.h>
 #pragma hdrstop
 //---------------------------------------------------------------------------
-USEFORM("Main.cpp", Form1);
+USEFORM("Main.cpp", FrmMain);
 //---------------------------------------------------------------------------
 WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int)
 {
     try
     {
          Application->Initialize();
-         Application->CreateForm(__classid(TForm1), &Form1);
+         Application->CreateForm(__classid(TFrmMain), &FrmMain);
          Application->Run();
     }
     catch (Exception &exception)
