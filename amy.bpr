@@ -4,7 +4,7 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="amy.exe"/>
-    <OBJFILES value="amy.obj Main.obj"/>
+    <OBJFILES value="amy.obj Main.obj Base64.obj"/>
     <RESFILES value="amy.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
@@ -12,7 +12,7 @@
     <RESDEPEN value="$(RESFILES) Main.dfm"/>
     <LIBFILES value=""/>
     <LIBRARIES value=""/>
-    <SPARELIBS value="rtl.lib vcl.lib bsfcb6.lib dbrtl.lib vcldb.lib bcbie.lib"/>
+    <SPARELIBS value="rtl.lib vcl.lib bsfcb6.lib dbrtl.lib vcldb.lib bcbie.lib sbridge60.lib"/>
     <PACKAGES value="rtl.bpi vcl.bpi dbrtl.bpi adortl.bpi vcldb.bpi vclx.bpi bdertl.bpi 
       vcldbx.bpi ibxpress.bpi dsnap.bpi cds.bpi bdecds.bpi qrpt.bpi teeui.bpi 
       teedb.bpi tee.bpi dss.bpi teeqr.bpi visualclx.bpi visualdbclx.bpi 
@@ -31,13 +31,14 @@
     <USERDEFINES value="_DEBUG"/>
     <SYSDEFINES value="_RTLDLL;NO_STRICT;USEPACKAGES"/>
     <MAINSOURCE value="amy.cpp"/>
-    <INCLUDEPATH value="&quot;..\..\Downloads\Almediadev BusinessSkinForm v.11.51 for D5-XE10.2 Tokyo Full Source&quot;;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;C:\Users\Omar\github\amy;$(BCB)\include;$(BCB)\include\vcl"/>
-    <LIBPATH value="&quot;..\..\Downloads\Almediadev BusinessSkinForm v.11.51 for D5-XE10.2 Tokyo Full Source&quot;;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;C:\Users\Omar\github\amy;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <INCLUDEPATH value="&quot;C:\Program Files (x86)\Devart\SecureBridge for CBuilder 6\Include&quot;;&quot;..\..\Downloads\Almediadev BusinessSkinForm v.11.51 for D5-XE10.2 Tokyo Full Source&quot;;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;C:\Users\Omar\github\amy;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="&quot;C:\Program Files (x86)\Devart\SecureBridge for CBuilder 6\Include&quot;;&quot;..\..\Downloads\Almediadev BusinessSkinForm v.11.51 for D5-XE10.2 Tokyo Full Source&quot;;&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot;;C:\Users\Omar\github\amy;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib"/>
     <WARNINGS value="-w-par"/>
     <OTHERFILES value=""/>
   </MACROS>
   <OPTIONS>
-    <IDLCFLAGS value="-I&quot;..\..\Downloads\Almediadev BusinessSkinForm v.11.51 for D5-XE10.2 Tokyo Full Source&quot; 
+    <IDLCFLAGS value="-I&quot;C:\Program Files (x86)\Devart\SecureBridge for CBuilder 6\Include&quot; 
+      -I&quot;..\..\Downloads\Almediadev BusinessSkinForm v.11.51 for D5-XE10.2 Tokyo Full Source&quot; 
       -I&quot;C:\Program Files (x86)\Borland\CBuilder6\Projects&quot; 
       -IC:\Users\Omar\github\amy -I$(BCB)\include -I$(BCB)\include\vcl 
       -src_suffix cpp -D_DEBUG -boa"/>
@@ -59,6 +60,7 @@
       <FILE FILENAME="amy.res" FORMNAME="" UNITNAME="amy.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="amy.cpp" FORMNAME="" UNITNAME="amy" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Main.cpp" FORMNAME="FrmMain" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Base64.cpp" FORMNAME="" UNITNAME="Base64" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>

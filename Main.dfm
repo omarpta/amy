@@ -1093,7 +1093,6 @@ object FrmMain: TFrmMain
     000000000000000000000000000000000000000000000000000000000000}
   OldCreateOrder = False
   Scaled = False
-  WindowState = wsMaximized
   DesignSize = (
     912
     441)
@@ -1103,7 +1102,7 @@ object FrmMain: TFrmMain
     Left = 0
     Top = 0
     Width = 912
-    Height = 65
+    Height = 57
     HintImageIndex = 0
     Anchors = [akLeft, akTop, akRight]
     TabOrder = 0
@@ -1135,9 +1134,76 @@ object FrmMain: TFrmMain
     Spacing = 2
     Caption = 'Server Configurations'
     UseSkinSize = True
-    object bsSkinComboBox1: TbsSkinComboBox
-      Left = 16
-      Top = 32
+    DesignSize = (
+      912
+      57)
+    object bsSkinStdLabel1: TbsSkinStdLabel
+      Left = 137
+      Top = 30
+      Width = 25
+      Height = 13
+      EllipsType = bsetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinDataName = 'stdlabel'
+      Caption = 'Host:'
+    end
+    object bsSkinStdLabel2: TbsSkinStdLabel
+      Left = 281
+      Top = 30
+      Width = 25
+      Height = 13
+      EllipsType = bsetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinDataName = 'stdlabel'
+      Caption = 'User:'
+    end
+    object bsSkinStdLabel3: TbsSkinStdLabel
+      Left = 422
+      Top = 30
+      Width = 26
+      Height = 13
+      EllipsType = bsetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinDataName = 'stdlabel'
+      Caption = 'Pass:'
+    end
+    object bsSkinStdLabel4: TbsSkinStdLabel
+      Left = 564
+      Top = 30
+      Width = 88
+      Height = 13
+      EllipsType = bsetNone
+      UseSkinFont = True
+      UseSkinColor = True
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = -11
+      DefaultFont.Name = 'MS Sans Serif'
+      DefaultFont.Style = []
+      SkinDataName = 'stdlabel'
+      Caption = 'Forward: [ip:]port[,]'
+    end
+    object cmbHosts: TbsSkinComboBox
+      Left = 8
+      Top = 28
       Width = 120
       Height = 20
       HintImageIndex = 0
@@ -1188,12 +1254,126 @@ object FrmMain: TFrmMain
       Sorted = False
       Style = bscbFixedStyle
     end
+    object txtHost: TbsSkinEdit
+      Left = 166
+      Top = 28
+      Width = 107
+      Height = 19
+      DefaultColor = clWindow
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clBlack
+      DefaultFont.Height = 13
+      DefaultFont.Name = 'Tahoma'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      ButtonMode = False
+      SkinDataName = 'edit'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = 13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
+      ButtonImageIndex = -1
+      LeftImageIndex = -1
+      LeftImageHotIndex = -1
+      LeftImageDownIndex = -1
+      RightImageIndex = -1
+      RightImageHotIndex = -1
+      RightImageDownIndex = -1
+    end
+    object txtUser: TbsSkinEdit
+      Left = 310
+      Top = 28
+      Width = 107
+      Height = 19
+      DefaultColor = clWindow
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clBlack
+      DefaultFont.Height = 13
+      DefaultFont.Name = 'Tahoma'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      ButtonMode = False
+      SkinDataName = 'edit'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = 13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 2
+      ButtonImageIndex = -1
+      LeftImageIndex = -1
+      LeftImageHotIndex = -1
+      LeftImageDownIndex = -1
+      RightImageIndex = -1
+      RightImageHotIndex = -1
+      RightImageDownIndex = -1
+    end
+    object txtForward: TbsSkinEdit
+      Left = 656
+      Top = 28
+      Width = 209
+      Height = 19
+      DefaultColor = clWindow
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clBlack
+      DefaultFont.Height = 13
+      DefaultFont.Name = 'Tahoma'
+      DefaultFont.Style = []
+      UseSkinFont = True
+      DefaultWidth = 0
+      DefaultHeight = 0
+      ButtonMode = False
+      SkinDataName = 'edit'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clBlack
+      Font.Height = 13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      Anchors = [akLeft, akTop, akRight]
+      ParentFont = False
+      TabOrder = 3
+      ButtonImageIndex = -1
+      LeftImageIndex = -1
+      LeftImageHotIndex = -1
+      LeftImageDownIndex = -1
+      RightImageIndex = -1
+      RightImageHotIndex = -1
+      RightImageDownIndex = -1
+    end
+    object txtPass: TbsSkinPasswordEdit
+      Left = 451
+      Top = 28
+      Width = 107
+      Height = 19
+      Cursor = crIBeam
+      HintImageIndex = 0
+      TabOrder = 4
+      SkinDataName = 'edit'
+      DefaultFont.Charset = DEFAULT_CHARSET
+      DefaultFont.Color = clWindowText
+      DefaultFont.Height = 13
+      DefaultFont.Name = 'Tahoma'
+      DefaultFont.Style = []
+      DefaultWidth = 0
+      DefaultHeight = 0
+      UseSkinFont = True
+      DefaultColor = clWindow
+      PasswordKind = pkRect
+    end
   end
-  object bsSkinMemo1: TbsSkinMemo
+  object terminal: TbsSkinMemo
     Left = 0
-    Top = 66
+    Top = 56
     Width = 912
-    Height = 354
+    Height = 363
     Anchors = [akLeft, akTop, akRight, akBottom]
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
@@ -1215,12 +1395,11 @@ object FrmMain: TFrmMain
     BitMapBG = True
     SkinDataName = 'memo'
   end
-  object bsSkinEdit1: TbsSkinEdit
+  object terminalInput: TbsSkinEdit
     Left = 0
     Top = 422
     Width = 912
     Height = 19
-    Text = 'bsSkinEdit1'
     DefaultColor = clWindow
     DefaultFont.Charset = DEFAULT_CHARSET
     DefaultFont.Color = clBlack
@@ -1247,6 +1426,42 @@ object FrmMain: TFrmMain
     RightImageIndex = -1
     RightImageHotIndex = -1
     RightImageDownIndex = -1
+  end
+  object btnGo: TbsSkinXFormButton
+    Left = 872
+    Top = 25
+    Width = 33
+    Height = 25
+    HintImageIndex = 0
+    Anchors = [akTop, akRight]
+    TabOrder = 3
+    SkinDataName = 'button'
+    DefaultFont.Charset = DEFAULT_CHARSET
+    DefaultFont.Color = clWindowText
+    DefaultFont.Height = 13
+    DefaultFont.Name = 'Tahoma'
+    DefaultFont.Style = []
+    DefaultWidth = 0
+    DefaultHeight = 0
+    UseSkinFont = True
+    Transparent = False
+    CheckedMode = False
+    ImageIndex = -1
+    AlwaysShowLayeredFrame = False
+    UseSkinSize = True
+    UseSkinFontColor = True
+    RepeatMode = False
+    RepeatInterval = 100
+    AllowAllUp = False
+    CanFocused = False
+    Down = False
+    GroupIndex = 0
+    Caption = 'GO'
+    NumGlyphs = 1
+    Spacing = 1
+    OnClick = btnGoClick
+    DefActiveFontColor = clBlack
+    DefDownFontColor = clBlack
   end
   object bsBusinessSkinForm1: TbsBusinessSkinForm
     ShowMDIScrollBars = True
@@ -1309,7 +1524,16 @@ object FrmMain: TFrmMain
     Magnetic = False
     MagneticSize = 5
     BorderIcons = [biSystemMenu, biMinimize, biMaximize, biRollUp]
-    Left = 752
-    Top = 8
+    Left = 792
+  end
+  object ScSSHClient1: TScSSHClient
+    Left = 696
+  end
+  object ScSSHShell1: TScSSHShell
+    Client = ScSSHClient1
+    Left = 728
+  end
+  object ScFileStorage1: TScFileStorage
+    Left = 760
   end
 end

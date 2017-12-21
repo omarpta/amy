@@ -11,15 +11,32 @@
 #include "bsSkinCtrls.hpp"
 #include "bsSkinBoxCtrls.hpp"
 #include <Mask.hpp>
+#include "ScBridge.hpp"
+#include "ScSSHChannel.hpp"
+#include "ScSSHClient.hpp"
+#include "bsSkinExCtrls.hpp"
 //---------------------------------------------------------------------------
 class TFrmMain : public TForm
 {
 __published:	// IDE-managed Components
     TbsBusinessSkinForm *bsBusinessSkinForm1;
     TbsSkinGroupBox *configGroup;
-    TbsSkinMemo *bsSkinMemo1;
-    TbsSkinComboBox *bsSkinComboBox1;
-    TbsSkinEdit *bsSkinEdit1;
+    TbsSkinMemo *terminal;
+    TbsSkinComboBox *cmbHosts;
+    TbsSkinEdit *terminalInput;
+    TbsSkinStdLabel *bsSkinStdLabel1;
+    TbsSkinEdit *txtHost;
+    TbsSkinStdLabel *bsSkinStdLabel2;
+    TbsSkinEdit *txtUser;
+    TbsSkinStdLabel *bsSkinStdLabel3;
+    TbsSkinStdLabel *bsSkinStdLabel4;
+    TbsSkinEdit *txtForward;
+    TScSSHClient *ScSSHClient1;
+    TScSSHShell *ScSSHShell1;
+    TScFileStorage *ScFileStorage1;
+    TbsSkinXFormButton *btnGo;
+    TbsSkinPasswordEdit *txtPass;
+    void __fastcall btnGoClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
     __fastcall TFrmMain(TComponent* Owner);
