@@ -37,7 +37,14 @@ void __fastcall TFrmMain::btnGoClick(TObject *Sender)
 
     //}
 }
-
+void __fastcall loadServersCombobox(TList *serversList)
+{
+    for (int i = 0; i < serversList->Count; i++)
+    {
+        TServer *server = reinterpret_cast<TServer *>(serversList->Items[i]);
+        FrmMain->cmbHosts->Items->Add((server->getHostName().IsEmpty()) ? (server->getUser() + "@" + server->getHost()) : server->getHostName());
+    }
+}
 //---------------------------------------------------------------------------
 void __fastcall TFrmMain::FormCreate(TObject *Sender)
 {
@@ -67,8 +74,19 @@ void __fastcall TFrmMain::FormCreate(TObject *Sender)
             server->setPort(keyParts->Strings[1].ToInt());
             sectionKey = keyParts->Strings[0];
         }
-        ShowMessage(sectionKey);
+        TStringList *keyParts = Split('@',sectionKey);
+        server->setUser(keyParts->Strings[0]);
+        server->setHost(keyParts->Strings[1]);
+        serversList->Add(server);
     }
+
+    loadServersCombobox(serversList);
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TFrmMain::cmbHostsChange(TObject *Sender)
+{
+    ShowMessage("teste");    
 }
 //---------------------------------------------------------------------------
 

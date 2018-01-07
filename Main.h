@@ -39,6 +39,7 @@ __published:	// IDE-managed Components
     TbsSkinPasswordEdit *txtPass;
     void __fastcall btnGoClick(TObject *Sender);
     void __fastcall FormCreate(TObject *Sender);
+    void __fastcall cmbHostsChange(TObject *Sender);
 private:	// User declarations
     TList *serversList;
 public:		// User declarations

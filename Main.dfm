@@ -1103,7 +1103,7 @@ object FrmMain: TFrmMain
     Left = 0
     Top = 0
     Width = 912
-    Height = 57
+    Height = 81
     HintImageIndex = 0
     Anchors = [akLeft, akTop, akRight]
     TabOrder = 0
@@ -1137,9 +1137,9 @@ object FrmMain: TFrmMain
     UseSkinSize = True
     DesignSize = (
       912
-      57)
+      81)
     object bsSkinStdLabel1: TbsSkinStdLabel
-      Left = 137
+      Left = 203
       Top = 30
       Width = 25
       Height = 13
@@ -1155,7 +1155,7 @@ object FrmMain: TFrmMain
       Caption = 'Host:'
     end
     object bsSkinStdLabel2: TbsSkinStdLabel
-      Left = 281
+      Left = 347
       Top = 30
       Width = 25
       Height = 13
@@ -1171,7 +1171,7 @@ object FrmMain: TFrmMain
       Caption = 'User:'
     end
     object bsSkinStdLabel3: TbsSkinStdLabel
-      Left = 422
+      Left = 488
       Top = 30
       Width = 26
       Height = 13
@@ -1187,7 +1187,7 @@ object FrmMain: TFrmMain
       Caption = 'Pass:'
     end
     object bsSkinStdLabel4: TbsSkinStdLabel
-      Left = 564
+      Left = 632
       Top = 30
       Width = 88
       Height = 13
@@ -1205,7 +1205,7 @@ object FrmMain: TFrmMain
     object cmbHosts: TbsSkinComboBox
       Left = 8
       Top = 28
-      Width = 120
+      Width = 193
       Height = 20
       HintImageIndex = 0
       TabOrder = 0
@@ -1238,7 +1238,7 @@ object FrmMain: TFrmMain
       ListBoxCaptionAlignment = taLeftJustify
       ListBoxUseSkinFont = True
       ListBoxUseSkinItemHeight = True
-      ListBoxWidth = 0
+      ListBoxWidth = 700
       HideSelection = True
       AutoComplete = True
       ImageIndex = -1
@@ -1254,9 +1254,10 @@ object FrmMain: TFrmMain
       Font.Style = []
       Sorted = False
       Style = bscbFixedStyle
+      OnChange = cmbHostsChange
     end
     object txtHost: TbsSkinEdit
-      Left = 166
+      Left = 232
       Top = 28
       Width = 107
       Height = 19
@@ -1287,7 +1288,7 @@ object FrmMain: TFrmMain
       RightImageDownIndex = -1
     end
     object txtUser: TbsSkinEdit
-      Left = 310
+      Left = 376
       Top = 28
       Width = 107
       Height = 19
@@ -1318,9 +1319,9 @@ object FrmMain: TFrmMain
       RightImageDownIndex = -1
     end
     object txtForward: TbsSkinEdit
-      Left = 656
+      Left = 724
       Top = 28
-      Width = 209
+      Width = 141
       Height = 19
       DefaultColor = clWindow
       DefaultFont.Charset = DEFAULT_CHARSET
@@ -1350,7 +1351,7 @@ object FrmMain: TFrmMain
       RightImageDownIndex = -1
     end
     object txtPass: TbsSkinPasswordEdit
-      Left = 451
+      Left = 517
       Top = 28
       Width = 107
       Height = 19
@@ -1372,9 +1373,9 @@ object FrmMain: TFrmMain
   end
   object terminal: TbsSkinMemo
     Left = 0
-    Top = 56
+    Top = 80
     Width = 912
-    Height = 363
+    Height = 339
     Anchors = [akLeft, akTop, akRight, akBottom]
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clBlack
