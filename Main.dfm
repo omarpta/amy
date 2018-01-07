@@ -1093,6 +1093,7 @@ object FrmMain: TFrmMain
     000000000000000000000000000000000000000000000000000000000000}
   OldCreateOrder = False
   Scaled = False
+  OnCreate = FormCreate
   DesignSize = (
     912
     441)

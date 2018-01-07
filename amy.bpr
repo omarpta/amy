@@ -4,7 +4,7 @@
   <MACROS>
     <VERSION value="BCB.06.00"/>
     <PROJECT value="amy.exe"/>
-    <OBJFILES value="amy.obj Main.obj Base64.obj"/>
+    <OBJFILES value="amy.obj Main.obj Base64.obj Server.obj"/>
     <RESFILES value="amy.res"/>
     <IDLFILES value=""/>
     <IDLGENFILES value=""/>
@@ -61,6 +61,7 @@
       <FILE FILENAME="amy.cpp" FORMNAME="" UNITNAME="amy" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Main.cpp" FORMNAME="FrmMain" UNITNAME="Main" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
       <FILE FILENAME="Base64.cpp" FORMNAME="" UNITNAME="Base64" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Server.cpp" FORMNAME="" UNITNAME="Server" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
   </FILELIST>
   <BUILDTOOLS>
   </BUILDTOOLS>

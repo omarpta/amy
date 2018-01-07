@@ -15,6 +15,7 @@
 #include "ScSSHChannel.hpp"
 #include "ScSSHClient.hpp"
 #include "bsSkinExCtrls.hpp"
+#include "Server.h"
 //---------------------------------------------------------------------------
 class TFrmMain : public TForm
 {
@@ -37,7 +38,9 @@ __published:	// IDE-managed Components
     TbsSkinXFormButton *btnGo;
     TbsSkinPasswordEdit *txtPass;
     void __fastcall btnGoClick(TObject *Sender);
+    void __fastcall FormCreate(TObject *Sender);
 private:	// User declarations
+    TList *serversList;
 public:		// User declarations
     __fastcall TFrmMain(TComponent* Owner);
 };
